@@ -1,0 +1,21 @@
+<table class='table table-hover table-inverse'>
+    <h2>7日間分の投稿数</h2>
+    <tr>
+      <th>6日前</th>
+      <th>5日前</th>
+      <th>4日前</th>
+    　<th>3日前</th>
+      <th>2日前</th>
+      <th>1日前</th>
+      <th>今日</th>
+    </tr>
+    <tr>
+      <td><%= @created_6daysago %></td>
+      <td><%= @created_5daysago %></td>
+      <td><%= @created_4daysago %></td>
+      <td><%= @created_3daysago.count %></td>
+      <td><%= @created_2daysago.count %></td>
+      <td><%= @created_yesterday.count %></td>
+      <td><%= @created_today.count %></td>
+    </tr>
+</table>
