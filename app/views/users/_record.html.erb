@@ -1,10 +1,13 @@
 
-<table class='table table-hover table-inverse'>
+<table class='table table-bordered'>
+  <thead>
     <tr>
       <th>今日の投稿</th>
       <th>前日の投稿</th>
       <th>前日比</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td><%= @today_book.count %></td>
       <td><%= @yesterday_book.count %></td>
@@ -15,11 +18,15 @@
        　  <%= (@the_day_before * 100).round %>
           <% end %></td>
     </tr>
+    </tbody>
+    <thead>
     <tr>
       <th>今週の投稿</th>
       <th>前週の投稿</th>
       <th>前週比</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td><%= @this_week_book.count %></td>
       <td><%= @last_week_book.count %></td>
@@ -30,4 +37,5 @@
        　<%= (@the_week_before * 100).round %>
           <% end %></td>
     </tr>
+    </tbody>
 </table>

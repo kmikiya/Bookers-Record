@@ -19,5 +19,6 @@ scope :created_4daysago, -> { where(created_at: 5.day.ago.beginning_of_day..4.da
 scope :created_3daysago, -> { where(created_at: 4.day.ago.beginning_of_day..3.day.ago.end_of_day) } 
 scope :created_2daysago, -> { where(created_at: 3.day.ago.beginning_of_day..2.day.ago.end_of_day) } 
 
+
 	
 end

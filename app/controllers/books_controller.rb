@@ -10,14 +10,6 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @book = Book.new
-    @created_6daysago = @books.created_6daysago.count
-    @created_5daysago = @books.created_5daysago.count
-    @created_4daysago = @books.created_4daysago.count
-    @created_3daysago = @books.created_3daysago
-    @created_2daysago = @books.created_2daysago
-    @created_yesterday = @books.created_yesterday
-    @created_today = @books.created_today
-    
   end
 
   def create
