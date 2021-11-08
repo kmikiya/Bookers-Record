@@ -36,3 +36,28 @@ div {
     margin-bottom: 10px;
   }
 }
+
+
+
+/*--コンテンツ 非表示 ↓必須-*/
+.showmore_content {
+	position: relative;
+	overflow: hidden;
+}
+.showmore_trigger {margin-top: 1em;}
+
+/*--「もっと見る」ボタン--*/
+.more {
+	color: #fff;
+	cursor: pointer;
+	background-color: #FD6158;
+	padding: .8em 2em;
+}
+
+/*--「閉じる」ボタン--*/
+.less {
+	color: #fff;
+	cursor: pointer;
+	background-color: #1ECE50;
+	padding: .8em 2em;
+}
